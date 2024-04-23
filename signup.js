@@ -1,5 +1,8 @@
 let users = []
-
+if(localStorage.usersignupDetails){
+    let getback = JSON.parse(localStorage.usersignupDetails)
+    users=getback
+}
 const Signup = () => {
     let inputone = document.getElementById('firstname').value;
     let inputtwo = document.getElementById('lastname').value;
@@ -33,5 +36,6 @@ const Signup = () => {
 
         users.push(userdetails);
         console.log(users);
+        localStorage.setItem('usersignupdetails', JSON.stringify(users))
     }
 };
