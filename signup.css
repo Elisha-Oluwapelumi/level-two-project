@@ -4,7 +4,7 @@ body {
 
 .logo-div {
     background-color: red !important;
-    width: 55vh !important;
+    width: 65vh !important;
     height: 25vh;
     margin-top: 3vh;
     margin-left: 30%;
@@ -27,7 +27,7 @@ body {
 
 .login-form {
     background-color: white !important;
-    width: 55vh !important;
+    width: 65vh !important;
     height: 100vh;
     margin-left: 0%;
     border-radius: 15px;
@@ -45,7 +45,7 @@ body {
     color: red;
     font-size: 30px;
     font-weight: bold;
-    margin-left: -55% !important;
+    margin-left: -60% !important;
     margin-top: 20px;
 }
 
@@ -62,12 +62,12 @@ body {
 .dateofbirth {
     color: black;
     font-size: 15px;
-    margin-left: -200px;
+    margin-left: -250px;
     margin-top: 15px;
 }
 
 .date {
-    width: 25%;
+    width: 30%;
     font-size: 15px;
     height: 35px;
     background-color: #f5dfd9;
@@ -78,7 +78,7 @@ body {
 }
 
 .year {
-    width: 100px;
+    width: 120px;
 }
 
 /* Hide the spinner arrows */
@@ -96,7 +96,7 @@ input[type=number] {
     font-size: 16px;
 }
 .phone {
-    width: 130px;
+    width: 200px;
     font-size: 15px;
     height: 35px;
     background-color: #f5dfd9;
@@ -110,6 +110,6 @@ input[type=number] {
 }
 
 .longinp {
-    width: 290px;
+    width: 360px;
     margin-top: 30px;
 }
