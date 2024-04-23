@@ -11,7 +11,7 @@ const Signup = () => {
 
     if (inputone.value == '' || inputtwo.value == '' || inputthree.value == '' || inputfour.value == '' || inputfive.value == '' || phone.value == '' || inputsix.value == '' || inputseven.value == '' || inputnine.checked == ''  ) {
         alert('haba')
-    } else if (phone) {
-        
+    } else if (phone.value!==10 || phone.value > 10 || phone.value < 10) {
+        alert('Phone Number is Invalid')
     }
 }
