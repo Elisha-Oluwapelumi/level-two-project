@@ -1,0 +1,110 @@
+body {
+    background-color: #f5dfd9;
+}
+
+.logo-div {
+    background-color: red !important;
+    width: 55vh !important;
+    height: 25vh;
+    margin-top: 3vh;
+    margin-left: 30%;
+    border-radius: 15px;
+    text-align: center;
+    padding-top: 5px;
+    position: absolute;
+    color: white;
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.logoimg {
+    width: 70px;
+    height: 50px;
+    background-color: white;
+    border-radius: 100%;
+}
+
+.login-form {
+    background-color: white !important;
+    width: 55vh !important;
+    height: 100vh;
+    margin-left: 0%;
+    border-radius: 15px;
+    margin-top: 3px;
+}
+
+.redirect {
+    margin-left: 85%;
+    color: red;
+    font-size: 15px;
+    padding-top: 2px;
+}
+
+.signup {
+    color: red;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: -55% !important;
+    margin-top: 20px;
+}
+
+.forms {
+    width: 45%;
+    font-size: 15px;
+    height: 35px;
+    background-color: #f5dfd9;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+.dateofbirth {
+    color: black;
+    font-size: 15px;
+    margin-left: -200px;
+    margin-top: 15px;
+}
+
+.date {
+    width: 25%;
+    font-size: 15px;
+    height: 35px;
+    background-color: #f5dfd9;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    margin-top: -20px;
+}
+
+.year {
+    width: 100px;
+}
+
+/* Hide the spinner arrows */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    /* Optionally, you can provide some styling to make the input field visually distinct */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.phone {
+    width: 130px;
+    font-size: 15px;
+    height: 35px;
+    background-color: #f5dfd9;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+#country-code {
+    width: 150px;
+}
