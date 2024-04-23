@@ -1,3 +1,5 @@
+let users = []
+
 const Signup = () => {
     let inputone = document.getElementById('firstname').value;
     let inputtwo = document.getElementById('lastname').value;
@@ -13,7 +15,7 @@ const Signup = () => {
     let phonenumber = country + phone;
 
     // Validate phone number length
-    if (phone.length < 10) {
+    if (phone.length < 10 || phone.length > 10) {
         alert('Phone number must be at least 10 digits long');
         return; // Stop further execution of the function
     }
