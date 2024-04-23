@@ -108,3 +108,8 @@ input[type=number] {
 #country-code {
     width: 150px;
 }
+
+.longinp {
+    width: 290px;
+    margin-top: 30px;
+}
