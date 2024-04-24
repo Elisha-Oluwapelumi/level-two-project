@@ -1,0 +1,100 @@
+body {
+    background-image: url(images/landingfor\ flyhiimg.jpg);
+    position: absolute;
+}
+
+.welcome-div {
+    text-align: center !important;
+    justify-content: center !important;
+}
+
+.welcome {
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 40vh;
+    margin-left: 500px;
+    text-align: center;
+
+}
+
+.quote {
+    color: wheat;
+    font-size: 15px;
+    font-weight: 700;
+    margin-left: 500px;
+    text-align: center;
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    width: 280px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    text-align: center !important;
+}
+
+.log {
+    text-align: center !important;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 580px;
+    font-style: italic;
+    background-color: red;
+    padding-top: 7px;
+    padding-left: 30px;
+
+}
+
+.create {
+    text-align: center !important;
+    color: black;
+    font-size: 15px;
+    margin-left: 580px;
+    padding-top: 10px;
+    padding-left: 80px;
+    font-style: italic;
+    background-color:  #f5dfd9;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media screen and (max-width:490px) {
+    .welcome {
+        overflow-x: hidden;
+        margin: 0;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .welcome-div {
+        overflow-x: hidden;
+        margin-top: 200px;
+    } 
+
+    .quote {
+        margin: 0;
+        overflow-x: hidden;
+        width: 330px;
+    }
+
+    .create {
+        overflow-x: hidden;
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    .log {
+        overflow-x: hidden;
+        margin-top: 20px;
+        margin: 0;
+    }
+    button {
+        margin-top: 20px;
+    }
+}
