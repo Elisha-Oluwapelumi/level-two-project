@@ -21,6 +21,9 @@ const Signup = () => {
     if (phone.length < 10 || phone.length > 10) {
         alert('Phone number must be at least 10 digits long');
         return; // Stop further execution of the function
+    } else if (inputseven.length < 8) {
+        alert('Password Must Not Be Less Than 8 Digits');
+        return; // Stop further execution of the function
     }
 
     if (inputone === '' || inputtwo === '' || inputthree === '' || inputfour === '' || inputfive === '' || phone === '' || inputsix === '' || inputseven === '' || !inputnine) {
@@ -37,5 +40,19 @@ const Signup = () => {
         users.push(userdetails);
         console.log(users);
         localStorage.setItem('usersignupdetails', JSON.stringify(users))
+        window.location.href = "login.html"
     }
+
+    document.getElementById('firstname').value = ''
+    document.getElementById('lastname').value = ''
+    document.getElementById('day').value = ''
+    document.getElementById('month').value = ''
+    document.getElementById('year').value = ''
+    document.getElementById('phonenumber').value = ''
+    document.getElementById('email').value = ''
+    document.getElementById('password').value = ''
+    document.getElementById('country-code').value = ''
+    document.getElementById('terms').checked = ''
+
+
 };
