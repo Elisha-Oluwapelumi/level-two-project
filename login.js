@@ -9,6 +9,7 @@ const Login = () => {
     for (let index = 0; index < retrivedobj.length; index++) {
         if (retrivedobj[index].email === inputone.value && retrivedobj[index].password === inputtwo.value) {
             userFound = true;
+            localStorage.setItem('currentUser', index)
             break; // Exit loop once user is found
         }
     }

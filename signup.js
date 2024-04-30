@@ -1,6 +1,8 @@
 let users = []
-if(localStorage.usersignupDetails){
-    let getback = JSON.parse(localStorage.usersignupDetails)
+if(localStorage.usersignupdetails){
+    let getback = JSON.parse(localStorage.usersignupdetails)
+    console.log(getback);
+    
     users=getback
 }
 const Signup = () => {
@@ -18,29 +20,36 @@ const Signup = () => {
     let phonenumber = country + phone;
 
     // Validate phone number length
-    if (phone.length < 10 || phone.length > 10) {
-        alert('Phone number must be at least 10 digits long');
-        return; // Stop further execution of the function
-    } else if (inputseven.length < 8) {
-        alert('Password Must Not Be Less Than 8 Digits');
-        return; // Stop further execution of the function
-    }
-
     if (inputone === '' || inputtwo === '' || inputthree === '' || inputfour === '' || inputfive === '' || phone === '' || inputsix === '' || inputseven === '' || !inputnine) {
         alert('Please fill in all the fields');
-    } else {
-        let userdetails = {
-            firstname: inputone,
-            lastname: inputtwo,
-            phone: phonenumber,
-            email: inputsix,
-            password: inputseven
-        };
+    } else{
 
-        users.push(userdetails);
-        console.log(users);
-        localStorage.setItem('usersignupdetails', JSON.stringify(users))
-        window.location.href = "login.html"
+        if (phone.length < 10 || phone.length > 10) {
+            alert('Phone number must be at least 10 digits long');
+            return; // Stop further execution of the function
+        }else if(inputfour>12){
+            alert("invalid month")
+        }
+         else if (inputseven.length < 8) {
+            alert('Password Must Not Be Less Than 8 Digits');
+            return; // Stop further execution of the function
+        }
+    
+        
+        else {
+            let userdetails = {
+                firstname: inputone,
+                lastname: inputtwo,
+                phone: phonenumber,
+                email: inputsix,
+                password: inputseven
+            };
+    
+            users.push(userdetails);
+            console.log(users);
+            localStorage.setItem('usersignupdetails', JSON.stringify(users))
+            window.location.href = "login.html"
+        }
     }
 
     document.getElementById('firstname').value = ''

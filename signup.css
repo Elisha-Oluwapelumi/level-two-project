@@ -117,13 +117,15 @@ input[type=number] {
 @media screen and (max-width:490px) {
     .logo-div {
         /* margin-left: -10% !important; */
-        width: 55vh !important;
+        width: 100vw !important;
         margin: 0;
+        margin-left: 0px !important;
+        border-radius: 0px !important;
     }
 
     .login-form {
-        width: 55vh !important;
+        width: 100vw !important;
         margin: 0;
-
+        border-radius: 0px;
     }
 }

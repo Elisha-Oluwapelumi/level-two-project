@@ -18,12 +18,12 @@
             <p class="redirect"><a href="login.html" style="color: red; text-decoration: none;">Login</a></p>
             <div>
                 <p class="signup">Sign Up</p>
-                <input type="text" name="" id="firstname" class="forms" placeholder="First Name">
-                <input type="text" name="" id="lastname" class="forms" placeholder="Last Name">
+                <input type="text" name="" required id="firstname" class="forms" placeholder="First Name">
+                <input type="text" name="" required id="lastname" class="forms" placeholder="Last Name">
                 <p class="dateofbirth">Date of Birth</p>
-                <input type="number" name="" id="day" class="date" placeholder="Day" min="1" max="31">
-                <input type="number" name="" id="month" class="date" placeholder="Month" min="1" max="12">
-                <input type="number" name="" id="year" class="date year" placeholder="Year" min="1980" max="2024">
+                <input type="number" name="" id="day" class="date" required placeholder="Day" min="1" max="31">
+                <input type="month" required name="" id="month" class="date" placeholder="Month" min="1" max="12">
+                <input type="date"  name="" id="year" class="date year" placeholder="Year" min="1980" max="2024" required>
                 <p class="dateofbirth">Country code</p>
                 <!-- <input type="tel" name="code" id="code"  class="date" placeholder=""> -->
                 <select id="country-code" class="date">
@@ -44,16 +44,15 @@
                     <option value="+90">Turkey (+90)</option>
                     <option value="+20">Egypt (+20)</option>
                     <option value="+27">South Africa (+27)</option>
-                    <option value="+7">Kazakhstan (+7)</option>
+                    <option value="+7">Kazakhstan ( +7)</option>
                     <option value="+91">Bangladesh (+880)</option>
                     <option value="+86">Philippines (+63)</option>
-                    <!-- Add more options as needed -->
                 </select>
-                <input type="number" name="" id="phonenumber" class="phone" placeholder="Phone Number" maxlength="10">
-                <input type="email" name="" id="email" class="forms longinp" placeholder="Email">
-                <input type="password" name="" id="password" class="forms longinp" placeholder="Set Password">
+                <input type="number" name="" id="phonenumber" class="phone" placeholder="Phone Number" maxlength="10" required>
+                <input type="email" name="" id="email" class="forms longinp" placeholder="Email" required>
+                <input type="password" name="" id="password" class="forms longinp" placeholder="Set Password" required>
                 <br>
-                <input type="checkbox" name="" id="terms"><span style="color: black; font-size: 15px;"> I agree to all Terms and Conditions</span>
+                <input type="checkbox" name="" id="terms" required><span style="color: black; font-size: 15px;"> I agree to all Terms and Conditions</span>
                 <button class="btn btn-danger w-75 mt-4 " onclick="Signup()">SignUp</button>
             </div>
         </div>
