@@ -3,12 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./index.css">
+    <title>Airline Booking App</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    
-
-    <script src="./index.js"></script>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="home">
+        <section class="search-section">
+            <h2>Search Flights</h2>
+            <div class="search-form">
+                <input type="text" id="origin" placeholder="Origin">
+                <input type="text" id="destination" placeholder="Destination">
+                <input type="date" id="date">
+                <button onclick="searchFlights()">Search Flights</button>
+            </div>
+        </section>
+        <section class="results-section">
+            <h2>Available Flights</h2>
+            <ul id="flight-results"></ul>
+        </section>
+    </main>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to our Airline Booking App. We offer the best deals on flights all around the world.</p>
+    </section>
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+        <div class="testimonial">
+            <p>"This is the best airline booking service I've ever used!" - Jane Doe</p>
+        </div>
+        <div class="testimonial">
+            <p>"Fast, reliable, and great prices." - John Smith</p>
+        </div>
+    </section>
+    <footer id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: support@airlinebooking.com</p>
+        <p>Phone: +1 234 567 890</p>
+    </footer>
+    <script src="index.js"></script>
 </body>
 </html>
